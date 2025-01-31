@@ -8,46 +8,47 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: linear-gradient(135deg, #4facfe, #00f2fe); /* نیلا اور سائین رنگ */
-            color: white;
+            background: linear-gradient(135deg, #3d2b1f, #c2a24c); /* سیاہ اور سنہری رنگ */
+            color: #f1c40f;
             padding: 20px;
-            overflow-y: auto; /* اس لائن کو تبدیل کیا گیا */
+            overflow-y: auto;
         }
         h1 {
             font-size: 3rem;
-            color: #fff;
-            text-shadow: 0 0 10px #4facfe, 0 0 20px #00f2fe;
-            animation: glow 2s infinite alternate;
+            color: #f5e79e;
+            text-shadow: 2px 2px 0px #b8860b, 4px 4px 0px #c39d5f, 6px 6px 0px #f1c40f;
+            animation: text-3d 2s infinite alternate;
+        }
+        @keyframes text-3d {
+            0% {
+                text-shadow: 2px 2px 0px #b8860b, 4px 4px 0px #c39d5f, 6px 6px 0px #f1c40f;
+            }
+            100% {
+                text-shadow: 0px 0px 10px #c39d5f, 0px 0px 15px #f1c40f, 0px 0px 20px #b8860b;
+            }
         }
         p {
             font-size: 1.5rem;
             margin: 20px 0;
             line-height: 1.8;
+            color: #f5e79e;
         }
         a {
             display: inline-block;
             margin-top: 20px;
             padding: 15px 30px;
-            background: linear-gradient(45deg, #25d366, #34e89e);
-            color: white;
+            background: linear-gradient(45deg, #b8860b, #f1c40f);
+            color: #3d2b1f;
             font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 0 10px #34e89e, 0 0 20px #25d366;
+            box-shadow: 0 0 10px #f1c40f, 0 0 20px #b8860b;
             transition: transform 0.2s ease-in-out;
         }
         a:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 15px #34e89e, 0 0 25px #25d366;
-        }
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 10px #4facfe, 0 0 20px #00f2fe;
-            }
-            100% {
-                text-shadow: 0 0 20px #00f2fe, 0 0 30px #4facfe;
-            }
+            box-shadow: 0 0 15px #f1c40f, 0 0 25px #b8860b;
         }
         .emoji {
             font-size: 2rem;
@@ -64,10 +65,20 @@
         .notice {
             font-size: 1.2rem;
             margin-top: 40px;
-            color: #fff;
-            background-color: #333;
+            color: #f5e79e;
+            background-color: #3d2b1f;
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 0 10px #c39d5f;
+        }
+        .copyright {
+            margin-top: 50px;
+            color: #f1c40f;
+            font-size: 1rem;
+            background-color: #3d2b1f;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #b8860b;
         }
     </style>
 </head>
@@ -87,6 +98,11 @@
     <div class="notice">
         <strong>نوٹس:</strong><br>
         یہ ویب سائٹ ایک ریل ویب سائٹ ہے۔ یہ ویب سائٹ لائف ٹائم چلنے والی ہے، اور آپ کو جلد ہی نئے اپڈیٹس ملیں گے۔
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="copyright">
+        Copyright © 2025 Best Earn. All rights reserved.
     </div>
 </body>
 </html>
